@@ -23,8 +23,6 @@
 sam build && sam deploy --profile $YOUR_PROFILE --no-confirm-changeset # 적절한 Profile로 변경해주세요.
 ```
 
-
-
 ```bash
 curl -XGET -H 'MyCustomAuthHeader:allow' https://api.example.com/hello  # change your custom domain
 ```
