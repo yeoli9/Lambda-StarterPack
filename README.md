@@ -29,5 +29,13 @@ curl -XGET -H 'MyCustomAuthHeader:allow' https://api.example.com/hello  # change
 
 ## Issue
 
-- 인증서 이슈로 바로 적용안될 수 있음
+- 인증서 배포에 시간이 걸려 실제 호출에 시간이 걸릴 수 있음
+  - 늦어도 10분 내에 배포 완료
 - 배포 중 종료하게되면 관련된 리소스를 모두 삭제 후 다시 배포할 것
+- 배포하는 자격증명에 권한이 부족할 수 있음
+  - Route53
+  - API Gateway
+  - ACM
+  - Lambda
+  - IAM
+  - 등 적절한 권한이 있는지 확인할 것
