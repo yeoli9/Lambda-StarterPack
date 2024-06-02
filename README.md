@@ -23,8 +23,13 @@
 sam build && sam deploy --profile $YOUR_PROFILE --no-confirm-changeset # 적절한 Profile로 변경해주세요.
 ```
 
-인증서 이슈로 바로 적용안될 수 있음
+
 
 ```bash
 curl -XGET -H 'MyCustomAuthHeader:allow' https://api.example.com/hello  # change your custom domain
 ```
+
+## Issue
+
+- 인증서 이슈로 바로 적용안될 수 있음
+- 배포 중 종료하게되면 관련된 리소스를 모두 삭제 후 다시 배포할 것
