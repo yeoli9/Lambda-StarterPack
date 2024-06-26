@@ -38,4 +38,4 @@ curl -XGET -H 'MyCustomAuthHeader:allow' https://api.example.com/hello  # change
   - ACM
   - Lambda
   - IAM
-  - 등 적절한 권한이 있는지 확인할 것
+  - 등 적절한 권한이 있는지 확인할 것 
